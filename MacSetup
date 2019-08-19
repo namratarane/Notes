@@ -1,0 +1,38 @@
+
+
+Reader for Chrome - Mercurial 
+Command + Esc
+
+**********************************************************************************************
+
+Setting up dark theme on Mac 
+Settings -> Appearance -> Dark
+
+
+How to Exclude Apps from the dark theme on Mac
+https://www.techjunkie.com/exclude-app-dark-mode-macos-mojave/
+
+1. First find the bundle Id for the App
+Eg Notes app
+osascript -e 'id of app "App Name"'
+
+Result : com.apple.Notes
+
+2. use this command and the bundle identifier to reset the app apperance to light 
+
+defaults write BundleIdentifier NSRequiresAquaSystemAppearance -bool yes
+
+Eg 
+defaults write com.apple.Notes NSRequiresAquaSystemAppearance -bool yes
+
+To revert the app back to dark mode 
+defaults delete Bundle Identifier NSRequiresAquaSystemAppearance
+
+**********************************************************************************************
+
+
+
+
+
+
+
